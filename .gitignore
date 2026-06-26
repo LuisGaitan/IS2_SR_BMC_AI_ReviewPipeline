@@ -1,0 +1,23 @@
+# Environments
+.env
+
+# Agent configurations
+.agent_version
+.project_config
+
+# PDF files (contain proprietary/research paper files)
+*.pdf
+**/*.pdf
+
+# Local logs
+*.log
+**/pipeline_execution.log
+**/reflection_execution.log
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Local/IDE settings
+.vscode/
+.idea/
