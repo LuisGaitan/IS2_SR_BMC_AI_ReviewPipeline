@@ -25,7 +25,7 @@ The system coordinates raw text extractors, dataset parsers, and API managers in
 4.  **Structured Semantic Tagging (`src/llm_client.py`)**: Passes definitions directly from the Codebook CSV and queries Gemini using strict `pydantic` schemas to return a structured JSON response (containing Strategy ID, Value Coded 0/1, exact quote, and rationale).
 5.  **Mathematical Quote Verification (`src/verifier.py`)**: Performs a literal substring search in the raw PDF text for the returned quote. If a mismatch or hallucination is caught, the verifier rejects the positive coding and programmatically downgrades the value to `0`.
 
-For full step-by-step detail and technical flowchart diagrams, see the **[Architecture and Methodology Report](Outputs/Architecture_and_Methodology.md)**.
+For full step-by-step detail and technical flowchart diagrams, see the **[Architecture and Methodology Report](Architecture_and_Methodology.md)**.
 
 ---
 
@@ -50,6 +50,8 @@ For full step-by-step detail and technical flowchart diagrams, see the **[Archit
 │   └── Firstrun_3_16_2026/            # Coded output matrices & human audits for Study 2
 │
 ├── scratch/                           # Diagnostic and metrics audit scripts
+├── Architecture_and_Methodology.md    # Technical architecture and methodology report
+├── DataTagging_Pipeline_Diagram.png   # Architecture visual map diagram
 └── combined_validation_report_GoldStandard-FirstRun.md  # Detailed validation report
 ```
 
